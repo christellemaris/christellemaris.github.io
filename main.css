@@ -1,0 +1,699 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px 2px 10px 2px;
+    padding: 5px;
+}
+
+h4 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 200;
+    margin: 10px;
+    padding: 2px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------------------------------------------ NAVBAR ------------------------------------------------------------ */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    margin: 0;
+    z-index: 5;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar p {
+    padding: 10px 20px 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0 0 0 80px;
+    align-self: baseline;
+}
+
+.tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.tabs a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    margin: 0 20px;
+    text-transform: capitalize;
+}
+
+.tabs a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.tabs a:active {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar p {
+        margin-left: 10px;
+    }
+}
+
+/* ------------------------------------------------------------ HOMEPAGE ------------------------------------------------------------ */
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------------ ABOUT ------------------------------ */
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about-me-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.about-me-text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.about-me h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight: 400;
+    padding: 15px 80px 15px 15px;
+    margin: 0;
+}
+
+.about-me h2 {
+    color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    font-weight: 400;
+    padding: 15px 80px 15px 15px;
+    margin: 0;
+}
+
+.about-me p {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0;
+    padding: 10px 80px 10px 10px;
+}
+
+.about-me-image img {
+    width: 320px;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .about-me-image img {
+        width: 220px;
+    }
+
+    .about-me h1 {
+        padding: 15px 20px 15px 15px;
+    }
+
+    .about-me h2 {
+        padding: 15px 20px 15px 15px;
+    }
+
+    .about-me p {
+        padding: 10px 20px 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .about-me-image img {
+        width: 180px;
+    }
+
+    .about-me h1 {
+        padding: 10px;
+        font-size: 35px;
+    }
+
+    .about-me h2 {
+        padding: 10px;
+        font-size: 25px;
+    }
+
+    .about-me p {
+        padding: 10px;
+        font-size: 12px;
+    }
+}
+
+/* ------------------------------ SKILLS ------------------------------ */
+
+.skills {
+    margin: 0 100px;
+}
+
+.graph {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0 30px 50px;
+    justify-content: flex-start;
+}
+
+.graph-column {
+    margin: 0;
+    padding: 2px 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    justify-content: flex-end;
+}
+
+@media only screen and (max-width: 600px) {
+    .skills {
+        margin: 0 10px;
+    }
+    .graph {
+        margin: 0 0 0 10px;
+    }
+}
+
+.bar {
+    height: 300px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.1);
+    align-self: center;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 5px;
+}
+
+.amount {
+    margin-bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.amount p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.bar100 {
+    height: 100%;
+    background-color: rgb(243, 255, 79);
+    border-radius: 5px;
+}
+
+.bar90 {
+    height: 90%;
+    background-color: rgb(255, 222, 77);
+}
+
+.bar80 {
+    height: 80%;
+    background-color: rgb(255, 222, 77);
+}
+
+.bar70 {
+    height: 70%;
+    background-color: rgb(252, 185, 60);;
+}
+
+.bar60 {
+    height: 60%;
+    background-color: rgb(252, 185, 60);
+}
+
+.bar50 {
+    height: 50%;
+    background-color: rgb(255, 135, 87);
+}
+
+.bar40 {
+    height: 40%;
+    background-color: rgb(255, 135, 87);
+}
+
+.bar30 {
+    height: 30%;
+    background-color: rgb(243, 150, 255);
+}
+
+.bar20 {
+    height: 20%;
+    background-color: rgb(243, 150, 255);
+}
+
+.bar10 {
+    height: 10%;
+    background-color: rgb(150, 180, 255);
+}
+
+/* ------------------------------------------------------------ PORTFOLIO ------------------------------------------------------------ */
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+
+@media only screen and (max-width: 600px) {
+    .portfolio {
+        margin: 0 10px;
+    }
+}
+
+.portfolio h3 {
+    font-size: 30px;
+}
+
+.display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.display-item {
+    width: 300px;
+    margin: 10px 25px 25px 25px;
+    padding: 5px;
+}
+
+.display-item iframe {
+    padding: 0;
+    margin: 0;
+    border: black solid 1px;
+}
+
+.display-item h5 {
+    padding: 2px;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.item-description {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* --------------------------------------------------------- ABOUT ME PAGE --------------------------------------------------------- */
+
+/* --------------- SHORT INTRO --------------- */
+
+.short-intro {
+    display: flex;
+    flex-direction: row;
+    margin: 40px 100px;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(255, 222, 77, 0.5);
+}
+
+.short-intro div p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+/* --------------- MY coding COURSES --------------- */
+
+.my-coding-skills {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 10px;
+    padding: 0 50px;
+}
+
+.my-coding-skills h3 {
+    font-size: 30px;
+}
+
+.website-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.website-list .website {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 2px;
+    width: 30%;
+}
+
+.website-list .website.other {
+    width: 60%;
+}
+
+.website-list .website .title {
+    display: flex;
+    flex-direction: row;
+    margin: 1px;
+    padding: 2px;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.website-list .website .title h4 {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 5px;
+    margin: 1px 10px 1px 1px;
+    background-color: rgba(255, 222, 77, 0.5);
+    border-radius: 5px;
+}
+
+.website-list .website .title a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+    padding: 5px;
+    margin: 1px 1px 1px 10px;
+    text-decoration: none;
+    color: #505050;
+}
+
+.website-list .website .title a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.website-list .website .course-list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.website-list .website .course-list .course-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.website-list .website .course-list .course-item .course-title {
+    margin: 1px;
+    padding: 2px;
+    width: 60%;
+    text-align: left;
+    align-self: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.website-list .website .course-list .course-item a {
+    text-align: left;
+    padding: 2px;
+    margin: 1px;
+    font-style: italic;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #505050;
+}
+
+.website-list .website .course-list .course-item a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+
+.website-list .website .course-list .course-item .course-skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    width: 40%;
+}
+
+
+.website-list .website .course-list .course-item .course-skills p.code {
+    background-color: rgb(243, 255, 79) ;
+    border-radius: 2px;
+    align-self: flex-start;
+    padding: 2px;
+    margin: 1px;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 12px;
+}
+
+
+/* --------------- NON-CODING SKILLS --------------- */
+
+.non-coding-skills {
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+    margin: 30px 10px;
+    border-top: dotted black 1px;
+}
+
+.non-coding-skills h3 {
+    font-size: 30px;
+}
+
+.non-coding-skills-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+.non-coding-skills-content .experience, .non-coding-skills-content .education {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0;
+    margin: 10px;
+}
+
+.experience .element, .education .element {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+
+.experience h4, .education h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.element .years {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    width: 10%;
+    padding: 2px;
+    margin: 0;
+    line-height: 1.5;
+    align-self: flex-start;
+}
+
+.element .what {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding: 2px;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.element .what .title, .element .what .diploma {
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.element .what .more {
+    padding: 0;
+    margin: 0 0 0 20px;
+    font-style: italic;
+}
+
+.element .what .more .more-years {
+    font-weight: 600;
+}
+
+.element .what .more .more-title, .element .what .more .more-where {
+    padding: 0;
+    margin: 0 0 0 20px;
+}
+
+.element .skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25%;
+    padding: 2px;
+    margin: 0;
+    justify-content: space-evenly;
+    align-content: flex-start;
+}
+.element .skills .general {
+    align-content: flex-start;
+}
+
+.element .skills p {
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 12px;
+    padding: 2px;
+    margin: 1px;
+}
+
+.element .what .title mark, .element .what .diploma mark {
+    background-color: rgba(255, 222, 77, 0.5);
+    padding: 2px;
+}
+
+.element .skills p.linguistics {
+    background-color: rgb(150, 180, 255) ;
+    border-radius: 2px;
+}
+
+.element .skills p.business {
+    background-color: rgb(243, 150, 255) ;
+    border-radius: 2px;
+}
+
+.element .skills p.code {
+    background-color: rgb(243, 255, 79) ;
+    border-radius: 2px;
+}
+
+.element .skills p.general {
+    background-color: rgba(0, 0, 0, 0.2) ;
+    border-radius: 2px;
+}
+
+/* ------------------------------------------------------------ CONTACT PAGE ------------------------------------------------------------ */
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 50px;
+}
+
+.contact-me p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.contact-me p.contact {
+    font-size: 40px;
+}
+
+.contact-me p.contact mark {
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.contact-me p.small {
+    font-size: 20px;
+}
+
+/* ------------------------------------------------------------ FOOTER ------------------------------------------------------------ */
+
+.footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    margin: 0;
+    padding: 5px;
+}
+
+/* ------------------------------------------------------------ FONTS ------------------------------------------------------------ */
+
+
+
+
+
