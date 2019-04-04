@@ -194,6 +194,12 @@ p {
     }
 }
 
+@media only screen and (max-width: 400px) {
+    .about-me {
+        flex-wrap: wrap;
+    }
+}
+
 /* ------------------------------ SKILLS ------------------------------ */
 
 .skills {
@@ -233,6 +239,27 @@ p {
     display: flex;
     flex-direction: column-reverse;
     border-radius: 5px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .bar {
+        height: 250px;
+        width: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .bar {
+        height: 200px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .bar {
+        height: 100px;
+        width: 20px;
+    }
 }
 
 .amount {
@@ -416,6 +443,12 @@ p {
     align-items: baseline;
 }
 
+@media only screen and (max-width: 1000px) {
+    .website-list .website .title {
+        flex-wrap: wrap;
+    }
+}
+
 .website-list .website .title h4 {
     font-size: 20px;
     font-weight: 600;
@@ -454,6 +487,12 @@ p {
     margin: 0;
     padding: 0;
     width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .website-list .website .course-list .course-item {
+        flex-wrap: wrap;
+    }
 }
 
 .website-list .website .course-list .course-item .course-title {
@@ -526,6 +565,12 @@ p {
     padding: 0;
 }
 
+@media only screen and (max-width: 1000px) {
+    .non-coding-skills-content {
+        flex-wrap: wrap;
+    }
+}
+
 .non-coding-skills-content .experience, .non-coding-skills-content .education {
     display: flex;
     flex-direction: column;
@@ -542,6 +587,19 @@ p {
     width: 100%;
     margin: 10px 0 0 0;
     padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .experience .element, .education .element {
+        flex-wrap: wrap;
+    }
+
+    .element .years {
+        flex-grow: 1;
+    }
+    .element .what, .element .skills {
+        flex-grow: 2;
+    }
 }
 
 .experience h4, .education h4 {
@@ -670,6 +728,41 @@ p {
 
 .contact-me p.small {
     font-size: 20px;
+}
+
+.contact-me .linkedin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .contact-me {
+        margin: 20px auto;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-me {
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .contact-me p {
+        font-size: 20px;
+    }
+
+    .contact-me p.contact {
+        font-size: 25px;
+    }
+
+    .contact-me p.small {
+        font-size: 14px;
+    }
 }
 
 /* ------------------------------------------------------------ FOOTER ------------------------------------------------------------ */
